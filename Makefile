@@ -5,7 +5,7 @@ all: node_modules shell/files/data-shell.zip
 	@cp shell/files/data-shell.zip _book/shell/files/
 	-@cp analysis-essentials.pdf _book/
 
-serve: node_modules shell/files/data-shell.zip
+serve: all
 	while true; do gitbook serve; sleep 5; done
 
 pdf: node_modules
